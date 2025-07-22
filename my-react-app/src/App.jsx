@@ -1,21 +1,21 @@
-import React from 'react';
-import './App.css';
-import { Routes, Route } from 'react-router-dom';
-import Home from './Pages/Home';
-import AddProduct from './Pages/AddProduct';
-import Header from './Components/Header';
+import "./App.css";
+import { Route, Routes } from "react-router";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import AddProduct from "./components/AddProduct";
+import EditProduct from "./components/EditProduct";
 
-const App = () => {
+function App() {
   return (
     <>
-      <Header />
+   <Header/>
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/add" element={<AddProduct />} />
-        <Route path="/edit/:id" element={<AddProduct />} />
+        <Route path="/" element={<Home/>} />
+        <Route path="/Add-product" element={<AddProduct/>} />
+        <Route path="/Edit-product/:id" element={<EditProduct />} />
       </Routes>
     </>
   );
-};
+}
 
 export default App;

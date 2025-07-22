@@ -46,14 +46,14 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-.navbar {
+/* .navbar {
   background-color: #ffffff !important;
   border-bottom: 1px solid #ddd;
-}
+} */
 
-.navbar-brand img {
+/* .navbar-brand img {
   height: 45px;
-}
+} */
 
 .card {
   border: none;
@@ -89,7 +89,3 @@ body {
   border: none;
 }
 
-form {
-  max-width: 600px;
-  margin: 0 auto;
-}
